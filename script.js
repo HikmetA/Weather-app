@@ -36,27 +36,27 @@ search.addEventListener('click', ()=>{
 
             switch(json.weather[0].main){
                 case 'Clear':
-                    image.src = './Images/clear.png';
+                    image.src = './images/clear.png';
                     break;
 
                 case 'Rain':
-                    image.src = './Images/rain.png';
+                    image.src = './images/rain.png';
                     break;
 
                 case 'Snow':
-                    image.src = './Images/snow.png';
+                    image.src = './images/snow.png';
                     break;
                 
                 case 'Cloud':
-                    image.src = './Images/cloud.png';
+                    image.src = './images/cloud.png';
                     break;
 
                 case 'Haze':
-                    image.src = './Images/haze.png';
+                    image.src = './images/haze.png';
                     break;
 
                 default:
-                    image.src = '';
+                    image.src = './images';
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
