@@ -36,27 +36,27 @@ search.addEventListener('click', ()=>{
 
             switch(json.weather[0].main){
                 case 'Clear':
-                    image.src = 'https://hikmeta.github.io/Weather-app/images/clear.png';
+                    image.src = 'images/clear.png';
                     break;
 
                 case 'Rain':
-                    image.src = 'https://hikmeta.github.io/Weather-app/images/rain.png';
+                    image.src = 'images/rain.png';
                     break;
 
                 case 'Snow':
-                    image.src = 'https://hikmeta.github.io/Weather-app/images/snow.png';
+                    image.src = 'images/snow.png';
                     break;
                 
                 case 'Cloud':
-                    image.src = 'https://hikmeta.github.io/Weather-app/images/cloud.png';
+                    image.src = 'images/cloud.png';
                     break;
 
                 case 'Haze':
-                    image.src = 'https://hikmeta.github.io/Weather-app/images/haze.png';
+                    image.src = 'images/haze.png';
                     break;
 
                 default:
-                    image.src = 'https://hikmeta.github.io/Weather-app/images';
+                    image.src = 'images';
             }
 
             temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
